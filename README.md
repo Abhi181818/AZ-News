@@ -5,3 +5,5 @@ In the project , run:
   npm start  
   Which will run the app in Development mode
   To view in browser open localhost:3000
+  
+Before running it in browser change the api_key 
