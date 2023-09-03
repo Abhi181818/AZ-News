@@ -1,5 +1,5 @@
 # AZ-News
-This is a Web App built using React and Bootstrap.This web app is used to gather news from different categories using Newsapi and display it.This is a Web App built using React and Bootstrap.This web app is used to gather news from different categories using Newsapi and display it.
+This is a Web App built using React and Bootstrap.This web app is used to gather news from different categories using Newsapi and display it.
 
 In the project , run:
   npm start  
