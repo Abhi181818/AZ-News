@@ -25,7 +25,7 @@ export default class News extends Component {
     }
     async componentDidMount() {
         this.props.setProgress(10)
-        let uurl = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=30461ae27f954248b4a3ad3df6c2b959&page=${this.state.page}`
+        let uurl = `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=30461ae27f954248b4a3ad3df6c2b959&page=${this.state.page}`
         this.setState({ loading: true })
         let data = await fetch(uurl);
         let paresedData = await data.json();
@@ -35,7 +35,7 @@ export default class News extends Component {
     }
     updateOnClick = async () => {
         this.props.setProgress(10)
-        let uurl = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=30461ae27f954248b4a3ad3df6c2b959&page=${this.state.page}`
+        let uurl = `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=30461ae27f954248b4a3ad3df6c2b959&page=${this.state.page}`
         this.setState({ loading: true })
         let data = await fetch(uurl);
         let paresedData = await data.json();
@@ -47,7 +47,7 @@ export default class News extends Component {
         this.setState({
             page: this.setState.page + 1
         })
-        let uurl = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=30461ae27f954248b4a3ad3df6c2b959&page=${this.state.page + 1}`
+        let uurl = `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=30461ae27f954248b4a3ad3df6c2b959&page=${this.state.page + 1}`
         this.setState({ loading: true })
         let data = await fetch(uurl);
         let paresedData = await data.json();
