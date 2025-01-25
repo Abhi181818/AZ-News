@@ -61,9 +61,9 @@ export default class News extends Component {
                 <h2 className='text-center' style={{ margin: "40px 0px" }}><strong>Top  Headlines From : {this.props.category}</strong></h2>
                 {this.state.loading && <Spinner />}
                 <InfiniteScroll
-                    dataLength={this.state.articles.length}
+                    dataLength={this.state?.articles?.length}
                     next={this.fetchMoreData}
-                    hasMore={this.state.articles.length !== this.state.totalResults}
+                    hasMore={this.state?.articles?.length !== this.state.totalResults}
                     loader={<Spinner />}
                 >
                     <div className='container'>
